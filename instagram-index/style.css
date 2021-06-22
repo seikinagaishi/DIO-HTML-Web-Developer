@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fafafa;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone-area, section {
+    height: 580px;
+    margin-top: -6%;
+}
+
+#phone-area {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+.phone {
+    position: absolute;
+    width: 270px;
+    height: 570px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px 2px;
+}
+
+#front-phone {
+    background-color: #f6f8fa;
+    margin-left: 75px;
+    margin-top: 15px;
+}
+
+#back-phone {
+    background-color: #212121;
+    margin-right: 75px;
+    margin-top: -15px;
+}
+
+section {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    padding: 25px 40px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box + .box {
+    margin-top: 10px;
+}
+
+#logo {
+    font-family: 'Rochester', cursive;
+    font-size: 30pt;
+    color: #262626;
+    margin-bottom: 40px;
+    cursor: default;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-input {
+    height: 38px;
+    margin-bottom: 6px;
+    padding: 0 5px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 9pt;
+}
+
+.form-button {
+    height: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 10.5pt;
+    color: #FFF;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-button:active {
+    background-color: #4bb2f5;
+}
+
+.horizontal-bar {
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    color: #9c8e8e;
+    position: relative;
+    margin: 25px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-bar span {
+    position: absolute;
+    font-weight: 500;
+    font-size: 10pt;
+    margin-top: -9px;
+    width: 60px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.small-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #385185;
+    border-radius: 1px;
+}
+
+#facebook a {
+    color: #385185;
+    font-weight: 500;
+    font-size: 10.5pt;
+    margin-left: 8px;
+}
+
+.small-link {
+    color: #00376B;
+    font-size: 9pt;
+}
+
+#forgot {
+    margin-top: 10px;
+}
+
+.link {
+    color: #0095F6;
+    font-weight: 500;
+}
+
+p {
+    font-size: 11pt;
+}
+
+#app-label {
+    margin: 16px;
+}
+
+#app-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-option {
+    width: 135px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.app-option + .app-option {
+    margin-left: 10px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.app-option p {
+    color: #fff;
+}
+
+.app-description {
+    font-size: 7pt;
+    text-transform: uppercase;
+}
+
+.app-title {
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-box {
+    display: flex;
+    color: #8e8e8e;
+    font-size: 10pt;
+    
+}
+
+.footer-box + .footer-box {
+    margin-top: 14px;
+}
+
+.footer-item {
+    list-style: none;
+    cursor: pointer;
+}
+
+cite.footer-item {
+    font-style: normal;
+    cursor: default;
+}
+
+.footer-item + .footer-item {
+    margin-left: 10px;
+}
+
+select.footer-item {
+    background-color: unset;
+    border: none;
+    color: #8e8e8e;
+}
+
+option {
+    color: #000;
+}
