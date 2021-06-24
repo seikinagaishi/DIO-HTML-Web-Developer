@@ -253,7 +253,9 @@ footer {
     display: flex;
     color: #8e8e8e;
     font-size: 10pt;
-    
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: center;
 }
 
 .footer-box + .footer-box {
@@ -263,6 +265,9 @@ footer {
 .footer-item {
     list-style: none;
     cursor: pointer;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 cite.footer-item {
@@ -282,4 +287,25 @@ select.footer-item {
 
 option {
     color: #000;
+}
+
+@media screen and (max-width: 900px) {
+    #phone-area {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-box, #app-area, #app-label {
+        display: none;
+    }
+
+    #footer-config {
+        display: flex;
+    }
+
+    #footer-config .footer-item {
+        white-space: normal;
+        text-align: center;
+    }
 }
