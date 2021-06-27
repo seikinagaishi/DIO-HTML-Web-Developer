@@ -264,7 +264,7 @@ nav, #nav-link-area, #nav-right, #profile {
     display: flex;
     flex-direction: column;
 
-    padding: 0 60px;
+    padding: 0 4%;
 
     position: relative;
 }
@@ -280,6 +280,7 @@ nav, #nav-link-area, #nav-right, #profile {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
     font-weight: lighter;
+    line-height: 60px;
 }
 
 .selected-item-description {
@@ -434,9 +435,132 @@ nav, #nav-link-area, #nav-right, #profile {
 }
 
 #left {
-    left: 60px;
+    left: 4%;
 }
 
 #right {
-    right: 60px;
+    right: 4%;
+}
+
+@media screen and (max-width: 1370px) {
+    #selected-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #selected-item {
+        margin-top: 30%;
+    }
+
+    .selected-item-name {
+        font-size: 30pt;
+        line-height: 40px;
+    }
+    
+    .selected-item-description {
+        font-size: 14pt;
+        line-height: 25px;
+    }
+    
+    .main-button {
+        font-size: 14pt;
+        padding: 5px 15px;
+    }
+
+    .topic-title {
+        font-size: 16pt;
+    }
+
+    #topic .item {
+        min-width: 200px;
+        height: 120px;
+    }
+    
+    .topic-arrow {
+        width: 40px;
+        height: 120px;
+        font-size: 15pt;
+    }
+
+    .topic-arrow:hover {
+        font-size: 16pt;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .selected-item-name {
+        font-size: 25pt;
+    }
+    
+    .selected-item-description {
+        font-size: 12pt;
+    }
+    
+    .main-button {
+        font-size: 12pt;
+        padding: 2.5px 7.5px;
+    }
+
+    .topic-title {
+        font-size: 12pt;
+    }
+
+    #topic .item {
+        min-width: 150px;
+        height: 90px;
+    }
+    
+    .topic-arrow {
+        width: 30px;
+        height: 90px;
+        font-size: 15pt;
+    }
+
+    .topic-arrow:hover {
+        font-size: 14pt;
+    }
+
+    nav, header {
+        flex-direction: column;
+    }
+
+    #nav-right {
+        margin-top: 10px;
+    }
+
+    #notification section {
+        top: 140px;
+        left: 1%;
+        right: unset;
+    }
+
+    #profile section {
+        top: 140px;
+        right: 28%;
+    }
+
+    #profile section::before {
+        right: 38%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #selected-item {
+        width: 100%;
+        margin-top: 50%
+    }
+
+    #nav-link-area {
+        font-size: 10pt;
+        white-space: nowrap;
+    }
+
+    #topic {
+        margin-top: 20%;
+    }
+
+    #age-rating {
+        top: 18%;
+    }
 }

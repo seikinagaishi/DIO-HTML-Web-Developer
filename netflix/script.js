@@ -84,7 +84,6 @@ function createArrowButton(direction, content) {
     if(direction == 'right') {
         let carouselRight = button;
         carouselRight.addEventListener('click', () => {
-            console.log('tes');
             moveScroll(carouselRight, 'right');
             if(!leftActive) {
                 createArrowButton('left', '〈');
