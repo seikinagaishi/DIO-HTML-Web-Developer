@@ -1,0 +1,442 @@
+:root {
+    --logo-color: #e50914;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navegação */
+
+header {
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(180deg, #000000ea 0%,  #ffffff00 100%);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    width: 100%;
+}
+
+nav, #nav-link-area, #nav-right, #profile {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--logo-color);
+    font-size: 25pt;
+    font-family: 'Bebas Neue', cursive;
+    
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+#nav-link-area {
+    list-style: none;
+    margin-left: 30px;
+}
+
+#nav-link-area li {
+    margin-right: 15px;
+}
+
+.nav-link {
+    cursor: pointer;
+    transition: 0.2s;
+    color: #a6aaa4;
+}
+
+.nav-link:hover {
+    color: #cdcdcd;
+}
+
+.nav-link-selected {
+    cursor: default;
+}
+
+#nav-right div + div {
+    margin-left: 20px;
+}
+
+#nav-right div {
+    cursor: pointer;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#search .icon {
+    position: absolute;
+    left: 4px;
+}
+
+#search {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    transition: 0.5s;
+}
+
+#search input {
+    display: none; 
+    width: 100%;
+    height: 30px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#notification section::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    position: fixed;
+    top: -4px;
+}
+
+#notification section span {
+    position: fixed;
+    opacity: 50%;
+    width: 80px;
+    height: 25px;
+    opacity: 0%;
+    margin-left: 340px;
+    margin-top: -135px;
+}
+
+#notification section {
+    background-color: #000;
+    position: fixed;
+    width: 420px;
+    height: 110px;
+    top: 70px;
+    right: 125px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 95%;
+    border: 1px solid #9e9e9e;
+    cursor: default;
+
+    color: gray;
+}
+
+#notification:hover section {
+    display: flex;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#profile section::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: fixed;
+    margin-top: -10px;
+
+    right: 85px;
+
+    transform: rotate(45deg);
+}
+
+#profile section span {
+    position: fixed;
+    width: 170px;
+    height: 22px;
+    opacity: 0%;
+    margin-top: -22px;
+}
+
+#profile section {
+    position: fixed;
+    top: 70px;
+    right: 60px;
+    background-color: #000;
+
+    display: none;
+    flex-direction: column;
+    width: 170px;
+    border: 1px solid #9e9e9e;
+    font-size: 10pt;
+    opacity: 95%;
+}
+
+#profile #user-area, #profile #config-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    cursor: default;
+}
+
+#profile #user-area .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#profile #user-area .user:hover p.profile-description {
+    text-decoration: underline;
+}
+
+#profile #user-area p.profile-description {
+    cursor: pointer;
+}
+
+#profile #user-area p.profile-description:hover {
+    text-decoration: underline;
+}
+
+#profile #config-area {
+    position: relative;
+    left: -20px;
+    margin-top: 10px;
+    border-top: 1px solid #9e9e9e;
+}
+
+#profile #config-area .option {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#profile #config-area .option:hover {
+    text-decoration: underline;
+}
+
+#profile p#profile-arrow {
+    transition: 0.3s ease all;
+}
+
+#profile:hover p#profile-arrow {
+    transform: rotate(180deg);
+}
+
+#profile:hover section {
+    display: flex;
+}
+
+/* Conteúdo */
+#content {
+    height: 100vh;
+    background-image: url('art.jpg');
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 60px;
+
+    position: relative;
+}
+
+#selected-item {
+    width: 35%;
+    margin-top: 15%;
+}
+
+.selected-item-name {
+    font-size: 45pt;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.selected-item-description {
+    color: white;
+    font-size: 18pt;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+#main-buttons {
+    display: flex;
+}
+
+.main-button {
+    font-size: 16pt;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.main-button:active {
+    border: 2px solid white;
+}
+
+#watch-btn {
+    background-color: #fff;
+}
+
+#watch-btn:hover {
+    background-color: #b3b3b3;
+}
+
+#watch-btn:active {
+    background-color: #888888;
+}
+
+#info-btn {
+    background-color: #5b5b59;
+    color: #fff;
+}
+
+#info-btn:hover {
+    background-color: #424242;
+}
+
+#info-btn:active {
+    background-color: #272727;
+}
+
+#age-rating {
+    width: 120px;
+    height: 38px;
+    background-color: #5c5c5ca6;
+
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+#age-rating::before {
+    content: '';
+    left: -3px;
+    width: 3px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+}
+
+#age-rating div {
+    width: 35px;
+    height: 35px;
+    background-color: #e7792b;
+    color: white;
+    border-radius: 5px;
+
+    margin-left: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    letter-spacing: 2px;
+}
+
+/* Carrossel */
+#topic {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.topic-title {
+    color: white;
+    font-size: 20pt;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#topic section {
+    max-width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#topic .item {
+    min-width: 250px;
+    height: 150px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+#topic section:hover .topic-arrow {
+    display: block;
+    opacity: 100%;
+}
+
+.topic-arrow {
+    position: absolute;
+    width: 50px;
+    height: 150px;
+
+    cursor: pointer;
+    font-size: 30pt;
+
+    border: none;
+    color: white;
+    background-color: unset;
+
+    opacity: 0%; 
+}
+
+.topic-arrow:hover {
+    display: block;
+    font-weight: bold;
+    font-size: 32pt;
+    background-color: #00000073;
+}
+
+#left {
+    left: 60px;
+}
+
+#right {
+    right: 60px;
+}

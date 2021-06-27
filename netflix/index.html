@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+        <title>Netflix</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <h1 class="logo">NETFLIX</h1>
+
+                <ul id="nav-link-area">
+                    <li class="nav-link-selected">Início</li>
+                    <li class="nav-link">Séries</li>
+                    <li class="nav-link">Filmes</li>
+                    <li class="nav-link">Bombando</li>
+                    <li class="nav-link">Minha lista</li>
+                </ul>
+            </nav>
+
+            <div id="nav-right">
+                <div id="search">
+                    <div id="search-button" class="icon"></div>
+                    <input id="search-bar" type="text" placeholder="Títulos, gente e gêneros">
+                </div>
+                
+
+                <div id="notification" class="icon">
+                    <section>
+                        <span></span>
+                        Nenhuma notificação recente
+                    </section>
+                </div>
+                
+                <div id="profile">
+                    <div class="profile-pic"></div>
+                    <p id="profile-arrow">▼</p>
+
+                    <section>
+                        <span></span>
+                        <div id="user-area">
+                            <div class="user">
+                                <div class="profile-pic"></div>
+                                <p class="profile-description">Usuário</p>
+                            </div>
+
+                            <p class="profile-description">Gerenciar perfis</p>
+                        </div>
+
+                        <div id="config-area">
+                            <a class="option">Conta</a>
+                            <a class="option">Centro de ajuda</a>
+                            <a class="option">Sair da Netflix</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="content">
+                <div id="selected-item">
+                    <h2 class="selected-item-name">Um Céu Claro à Noite</h2>
+
+                    <p class="selected-item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos aperiam, 
+                        magni facere dignissimos inventore.
+                    </p>
+
+                    <div id="main-buttons">
+                        <button id="watch-btn" type="button" class="main-button">▶ Assistir</button>
+                        <button id="info-btn" type="button" class="main-button">ⓘ Mais informações</button>
+                    </div>
+
+                    <div id="age-rating">
+                        <div>14</div>
+                    </div>
+                </div>
+
+                <div id="topic">
+                    <h2 class="topic-title">Destaques</h2>
+                    <section>
+                        <div class="item">1</div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
